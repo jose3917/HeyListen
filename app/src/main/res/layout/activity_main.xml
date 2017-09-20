@@ -8,6 +8,13 @@
     android:orientation="vertical"
     tools:context="com.example.josedeita.heylisten.MainActivity">
 
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" />
+
     <FrameLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
