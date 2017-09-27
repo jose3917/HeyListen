@@ -3,24 +3,15 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              android:padding="10dp"
-             tools:context="com.example.josedeita.heylisten.DashboardFragment">
+             tools:context="com.example.josedeita.heylisten.FriendsFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Dashboard Fragment"
         android:textSize="24dp"
-        android:id="@+id/textView2"/>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="72dp"
-        android:text="Button"/>
+        android:text="Friends Go Here"
+        android:id="@+id/friends_list_textView"/>
 
 </RelativeLayout>
