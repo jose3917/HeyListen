@@ -9,9 +9,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:textSize="24sp"
         android:text="Settings Fragment"
-        android:id="@+id/settings_textView"/>
+        android:id="@+id/settings_textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"/>
 
 </RelativeLayout>

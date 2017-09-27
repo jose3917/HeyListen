@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_friends_list:
                     //mTextMessage.setText(R.string.title_notifications);
-                    if(fragment!=null && fragment.getTag()!=SETTINGS_TAG){
+                    if(fragment!=null && fragment.getTag()!=FRIENDS_LIST_TAG){
                       removeFragment(fragment);
                       addFriendsListFragment();
                     }
