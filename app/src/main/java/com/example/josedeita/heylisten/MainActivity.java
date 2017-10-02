@@ -20,29 +20,30 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            Fragment fragment = getSupportFragmentManager()
-                .findFragmentById(R.id.fragment_container);
+            //Fragment fragment = getSupportFragmentManager()
+            //    .findFragmentById(R.id.fragment_container);
+            //removeFragment();
             switch (item.getItemId()) {
                 case R.id.navigation_settings:
                     //mTextMessage.setText(R.string.title_home);
-                    if(fragment!=null && fragment.getTag()!= SETTINGS_TAG){
-                      removeFragment(fragment);
+                    //if(fragment!=null && fragment.getTag()!= SETTINGS_TAG){
+                      removeFragment();
                       addSettingsFragment();
-                    }
+                    //}
                     return true;
                 case R.id.navigation_home:
                     //mTextMessage.setText(R.string.title_dashboard);
-                    if(fragment!=null && fragment.getTag()!= HOME_TAG){
-                      removeFragment(fragment);
+                    //if(fragment!=null && fragment.getTag()!= HOME_TAG){
+                      removeFragment();
                       addHomeFragment();
-                    }
+                    //}
                     return true;
                 case R.id.navigation_friends_list:
                     //mTextMessage.setText(R.string.title_notifications);
-                    if(fragment!=null && fragment.getTag()!=FRIENDS_LIST_TAG){
-                      removeFragment(fragment);
+                    //if(fragment!=null && fragment.getTag()!=FRIENDS_LIST_TAG){
+                      removeFragment();
                       addFriendsListFragment();
-                    }
+                    //}
                     return true;
             }
             return false;
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         navigation.setSelectedItemId(R.id.navigation_home);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         
-        addHomeFragment();
+       //addHomeFragment();
             
     }
     
@@ -88,7 +89,9 @@ public class MainActivity extends AppCompatActivity {
           .commit();
     }
     
-    public void removeFragment(Fragment fragment){
+    public void removeFragment(){
+      Fragment fragment = getSupportFragmentManager()
+          .findFragmentById(R.id.fragment_container);
       if(fragment!=null){
         getSupportFragmentManager()
             .beginTransaction()

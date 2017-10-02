@@ -6,14 +6,31 @@
              android:padding="10dp">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <RadioButton
+        android:id="@+id/visibility"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:text="Settings Fragment"
-        android:id="@+id/settings_textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="82dp"/>
+        android:layout_marginTop="73dp"
+        android:text="Invisibe"/>
 
+    <Button
+        android:id="@+id/change_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:text="Change Username"
+        android:layout_below="@+id/visibility"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/ban_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Ban Someone"/>
 </RelativeLayout>
