@@ -7,30 +7,32 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <RadioButton
-        android:id="@+id/visibility"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="73dp"
-        android:text="Invisibe"/>
-
     <Button
         android:id="@+id/change_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="85dp"
         android:text="Change Username"
-        android:layout_below="@+id/visibility"
-        android:layout_centerHorizontal="true"/>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="177dp"/>
 
     <Button
         android:id="@+id/ban_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/change_name"
+        android:text="Ban Someone"
+        android:layout_alignBottom="@+id/change_name"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
-        android:text="Ban Someone"/>
+        android:layout_marginBottom="118dp"/>
+
+    <Switch
+        android:id="@+id/visibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Incognito"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"/>
+
 </RelativeLayout>
